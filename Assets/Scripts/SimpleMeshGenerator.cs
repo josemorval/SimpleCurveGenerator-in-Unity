@@ -74,7 +74,7 @@ public class SimpleMeshGenerator : MonoBehaviour {
 
 	public Vector3 DerivateCurve(float t,float dt){
 
-		return (Curve(t+dt)-Curve(t))/dt;
+		return (Curve(t+dt)-Curve(t-dt))/(2f*dt);
 
 	}
 
